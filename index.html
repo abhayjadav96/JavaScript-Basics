@@ -11,12 +11,20 @@
 
     <script>
         
-        // Conditions 
-        result=71;
+       // IF, Else If
+        result=28;
 
         if(result >= 0 && result <= 30 )
-        {
-            console.log("You are Fail")
+        {   
+            if(result >=0 && result <25)
+            {
+                console.log("You are Fail")
+            }
+            else if(result>=25 && result<=30)
+            {
+                console.log("You have passed by grace marks")
+            }
+            
         }    
         else if(result>=30 && result<=50)
         {
@@ -34,7 +42,64 @@
         {
             console.log("Invalid Result")
         }
+
+        function first_name()
+        {
+            console.log("First Name is: Abhay")
+
+        }
         
+
+
+        // switch
+
+
+        switch(status=5)
+        {
+            
+            case 0:
+                console.log("Monday")
+                break;
+
+            case 1: 
+                console.log("Tuesday")
+                break;
+
+            case 2:
+                console.log("Wednesday")
+                break;
+
+            case 3:
+                console.log("Thursday")
+                break;
+                
+            case 4:
+                console.log("Friday")
+                break;
+            
+            case 5:
+                console.log("saturday")
+                break;
+
+            case 6:
+                console.log("Sunday")
+                break;
+
+        }
+
+        // There are three main types of oprators. 
+        // 1. Urnary: It runs with single operand         
+        // 2. binary: It runs with two operands 
+        // 1. ternary: It runs with 3 operands 
+
+        ////// ARRAYS hUrREyyyyy !!!!!!!!! HAHAHAHHAHAHAHAHAHAHAHH
+
+        // BASIC ARRAY: SET OF ELEMENTS OF SAME SYNTAX UNDER A SINGLE VARIABLE
+
+        let name = ["Abhay","Khevna", "Shail", "Krupal"]
+        // This is a array of 4 elements starting with index 0 till 3
+        console.log(name)
+
     </script>
 </body> 
 

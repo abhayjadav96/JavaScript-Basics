@@ -1,25 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+        .one{
+
+            height: 400px;
+            width: 400px;
+            background-color: yellow;
+            text-align: center;
+
+        }
+
+    </style>
 </head>
 <body>
 
-    <button>
+    <div class="one" id="one">
 
-        Click
+        <h1>Hello Hello</h1>
+
+    </div>
+
+
+    <button onclick="changeElement()">
+
+        Change Something
 
     </button>
 
 
     <script>
 
-        function dosomething(){
+        function changeElement()
+            {
+	            let di=document.getElementById("one")
 
-            console.log("Hey There");
-        }
+	            di.style.backgroundColor="red";
+            }
 
 
     </script>

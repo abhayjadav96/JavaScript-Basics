@@ -13,6 +13,13 @@
 
         }
 
+        .two{
+
+            height: 200px;
+            width: 500px;
+            background-color: bisque;
+        }
+
     </style>
 </head>
 <body>
@@ -30,6 +37,14 @@
 
     </button>
 
+    <div class="two">
+
+        <h1>Enter Password</h1>
+        <input class="inp" type="password" placeholder="Enter Password">
+        <button class="btn" onmousedown="ShowPassword()" onmouseup="HidePassword()" onmouseout="HidePassword()">Show Password</button>
+
+    </div>
+
 
     <script>
 
@@ -39,6 +54,18 @@
 
 	            di.style.backgroundColor="red";
             }
+
+        function ShowPassword(){
+
+            let inp=document.getElementsByClassName("inp");
+            inp[0].type="text";
+        }
+
+        function HidePassword(){
+
+            let inp=document.getElementsByClassName("inp");
+            inp[0].type="password";
+        }
 
 
     </script>
